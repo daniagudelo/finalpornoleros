@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+    <% @videos.each do |video| %>
+    <div class="col-xs-12">
+      <div class="text-center">
+        <h2><%= video.title %></h2>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
