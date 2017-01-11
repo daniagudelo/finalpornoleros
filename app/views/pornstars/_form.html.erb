@@ -1,0 +1,19 @@
+<%= simple_form_for @pornstar do |f| %>
+  <% if @pornstar.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= "#{pluralize(@pornstar.errors.count, "error")} prohibited this post from being saved:" %>
+      </h2>
+      <ul>
+        <% @pornstar.errors.full_messages.each do |msg| %>
+          <li>
+            <%= msg %>
+          </li>
+          <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.input :name %>
+  <%= f.input :picture %>
+  <%= f.submit 'Save' %>
+<% end %>

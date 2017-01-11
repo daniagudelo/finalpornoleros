@@ -1,0 +1,2 @@
+module PornstarsHelper
+end
